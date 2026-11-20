@@ -1,0 +1,129 @@
+{
+  "git_username": "toleutaev13",
+  "instance_seed": 5580014552038820860,
+  "cpu_signature": "AMD64::Intel64 Family 6 Model 186 Stepping 2, GenuineIntel::12",
+  "logical_cores": 12,
+  "cache_line_size": 64,
+  "affinity_cores": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "affinity_applied": true,
+  "python": "3.13.14",
+  "os": "Windows-11-10.0.26200-SP0",
+  "num_threads": 4,
+  "iterations_per_thread": 60000000,
+  "increment": 2,
+  "expected_final_value": 120000000,
+  "results": {
+    "stride_1": {
+      "runs_ns": [
+        420777700,
+        521353700,
+        425910300
+      ],
+      "median_ns": 425910300,
+      "ns_per_update": 7.098505,
+      "context_switches_last_run": {
+        "voluntary": -7,
+        "involuntary": 0
+      },
+      "final_values": [
+        120000000,
+        120000000,
+        120000000,
+        120000000
+      ]
+    },
+    "stride_4": {
+      "runs_ns": [
+        441232900,
+        384308700,
+        447553400
+      ],
+      "median_ns": 441232900,
+      "ns_per_update": 7.353881666666667,
+      "context_switches_last_run": {
+        "voluntary": -3,
+        "involuntary": 0
+      },
+      "final_values": [
+        120000000,
+        120000000,
+        120000000,
+        120000000
+      ]
+    },
+    "stride_8": {
+      "runs_ns": [
+        258616100,
+        274964200,
+        261394400
+      ],
+      "median_ns": 261394400,
+      "ns_per_update": 4.356573333333333,
+      "context_switches_last_run": {
+        "voluntary": -8,
+        "involuntary": 0
+      },
+      "final_values": [
+        120000000,
+        120000000,
+        120000000,
+        120000000
+      ]
+    },
+    "stride_16": {
+      "runs_ns": [
+        279507300,
+        258292300,
+        267516400
+      ],
+      "median_ns": 267516400,
+      "ns_per_update": 4.458606666666666,
+      "context_switches_last_run": {
+        "voluntary": -7,
+        "involuntary": 0
+      },
+      "final_values": [
+        120000000,
+        120000000,
+        120000000,
+        120000000
+      ]
+    }
+  },
+  "private_baseline": {
+    "runs_ns": [
+      465800,
+      258500,
+      803800
+    ],
+    "median_ns": 465800,
+    "ns_per_update": 0.007763333333333333,
+    "final_values": [
+      120000000,
+      120000000,
+      120000000,
+      120000000
+    ]
+  },
+  "slowdown_stride1_vs_stride8": 1.6293780585965116,
+  "slowdown_stride8_vs_stride16": 0.9771154217087251,
+  "gil_experiment": {
+    "threads_1_ns": 991935200,
+    "threads_4_ns": 4069729800,
+    "iters_per_thread": 1000000,
+    "slowdown_4_vs_1": 4.102818208286187
+  },
+  "llvm": {
+    "store_i64_count": 5,
+    "load_i64_count": 10,
+    "python_object_fallback": false
+  },
+  "parity_passed": true,
+  "llvm_passed": true,
+  "verification_passed": true
+}
